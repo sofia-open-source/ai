@@ -1,0 +1,5 @@
+auto-install-peers = true
+link-workspace-packages = true
+public-hoist-pattern[]=*eslint*
+public-hoist-pattern[]=*prettier*
+//registry.npmjs.org/:_authToken=npm_secret
