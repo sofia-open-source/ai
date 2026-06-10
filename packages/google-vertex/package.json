@@ -1,5 +1,5 @@
 {
-  "name": "@ai-sdk/google-vertex",
+  "name": "@sofia-open-source/ai-sdk-google-vertex",
   "version": "4.0.139",
   "license": "Apache-2.0",
   "sideEffects": false,
@@ -85,7 +85,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "workspace:*",
-    "@ai-sdk/google": "workspace:*",
+    "@sofia-open-source/ai-sdk-google": "workspace:*",
     "@ai-sdk/openai-compatible": "workspace:*",
     "@ai-sdk/provider": "workspace:*",
     "@ai-sdk/provider-utils": "workspace:*",

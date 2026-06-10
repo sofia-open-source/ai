@@ -1,6 +1,6 @@
 {
-  "name": "@ai-sdk/google",
-  "version": "3.0.80",
+  "name": "@sofia-open-source/ai-sdk-google",
+  "version": "3.0.81",
   "license": "Apache-2.0",
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -32,7 +32,8 @@
     "test:update": "pnpm test:node -u",
     "test:watch": "vitest --config vitest.node.config.js",
     "test:edge": "vitest --config vitest.edge.config.js --run",
-    "test:node": "vitest --config vitest.node.config.js --run"
+    "test:node": "vitest --config vitest.node.config.js --run",
+    "_publish": "pnpm build && pnpm publish --no-git-checks --access public"
   },
   "exports": {
     "./package.json": "./package.json",
