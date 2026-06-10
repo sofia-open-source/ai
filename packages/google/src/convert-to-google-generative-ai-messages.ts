@@ -143,7 +143,6 @@ function appendToolResultParts(
 
   parts.push({
     functionResponse: {
-      ...(toolCallId != null ? { id: toolCallId } : {}),
       name: toolName,
       response: {
         name: toolName,
@@ -178,7 +177,6 @@ function appendLegacyToolResultParts(
       case 'text':
         parts.push({
           functionResponse: {
-            ...(toolCallId != null ? { id: toolCallId } : {}),
             name: toolName,
             response: {
               name: toolName,
@@ -395,9 +393,6 @@ export function convertToGoogleGenerativeAIMessages(
 
                   return {
                     functionCall: {
-                      ...(part.toolCallId != null
-                        ? { id: part.toolCallId }
-                        : {}),
                       name: part.toolName,
                       args: part.input,
                     },
@@ -504,7 +499,6 @@ export function convertToGoogleGenerativeAIMessages(
           } else {
             parts.push({
               functionResponse: {
-                ...(part.toolCallId != null ? { id: part.toolCallId } : {}),
                 name: part.toolName,
                 response: {
                   name: part.toolName,
